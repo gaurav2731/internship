@@ -1,0 +1,160 @@
+my_list = [10, 20, 20, 30, 40, 40, 50]
+unique_set = set(my_list)
+print("Unique Set:", unique_set)
+
+even = {20, 40, 60, 80}
+print("Intersection:", unique_set & even)
+print("Union:", unique_set | even)
+
+# 
+
+my_set = set()
+my_set.add(5)
+my_set.add(10)
+my_set.update([15, 20, 25])
+my_set.remove(10)
+
+print("Final Set:", my_set)
+print("Is Subset:", my_set.issubset({5, 15, 20, 25, 30}))
+
+# 
+student_info = ("Alice", 20, "A")
+name, age, grade = student_info
+print(f"Name: {name} | Age: {age} | Grade: {grade}")
+
+# student_info[0] = "Bob"  # TypeError: Tuples are immutable
+
+# ##
+
+scores = (85, 90, 85, 70, 85, 95)
+print("Count of 85:", scores.count(85))
+print("First index of 90:", scores.index(90))
+
+# ####
+
+employee = {"name": "John", "department": "Sales", "salary": 50000}
+employee["salary"] = 60000
+employee["role"] = "Manager"
+del employee["department"]
+
+print(employee)
+
+
+# #####
+
+employee = {"name": "John", "department": "Sales", "salary": 50000}
+employee["salary"] = 60000
+employee["role"] = "Manager"
+del employee["department"]
+
+print(employee)
+
+
+# ######
+
+capitals = {"France": "Paris", "Japan": "Tokyo", "India": "New Delhi"}
+
+print("Countries:", ", ".join(capitals.keys()))
+print("Capitals:", ", ".join(capitals.values()))
+
+for country, capital in capitals.items():
+    print(f"The capital of {country} is {capital}")
+
+# ########
+
+nums = [1, 2, 3, 4, 5]
+squares_dict = {n: n**2 for n in nums}
+print("Squares Dict:", squares_dict)
+
+# #######
+
+marks = {"Alice": 85, "Bob": 40, "Charlie": 92, "David": 55}
+passed_students = {name: score for name, score in marks.items() if score >= 60}
+print("Passed Students:", passed_students)
+
+# @######
+
+def greet(name):
+    return f"Good Morning, {name}!"
+
+def generate_table(n):
+    return [n * i for i in range(1, 11)]
+
+print(greet("Alice"))
+print("Table of 7:", generate_table(7))
+
+
+
+# ################
+
+def check_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def remove_duplicates_and_sort(lst):
+    return sorted(set(lst))
+
+print("Is 47 prime?", check_prime(47))
+print("Is 10 prime?", check_prime(10))
+print("Cleaned List:", remove_duplicates_and_sort([4, 2, 8, 6, 2, 1, 5, 4]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

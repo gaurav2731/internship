@@ -1,0 +1,68 @@
+# part 1
+fruit = ["apple", "Banana" , "strawberry" , "orange" , "kiwi" , "grapes" ]
+fruit[2] = "mango"
+print(fruit)
+print("list slicing to print the first 3 fruits" , fruit[:3])
+print("list slicing to print the last 2 fruits" , fruit[:3:-1])
+print("list slicing to print the reverse order of fruits" , fruit[::-1])
+
+
+# part 2
+
+numbers = [2, 5, 8, 11, 14, 17, 20, 25]
+print(numbers)
+square = [i*i for i in numbers]
+print("squares",square)
+
+evens = [i for i in numbers if i%2==0]
+print("even number" , evens)
+
+# part 3
+temp = [35, 12, 40, 8, 22, 45, 18]
+print(temp)
+
+wheather = ["hot" if i > 30 else "cool" for i in temp]
+print(wheather)
+
+# part 4
+names = ['alice', 'bob', 'charlie', 'diana', 'edward']
+print(names)
+capitalized_names = [ names.upper() for names in names]
+print(capitalized_names)
+filteren_names = [i for i in names if len(i)>=5]
+print(filteren_names)
+
+# part 5
+my_list = []         #1
+my_list.append(10)  #2
+my_list.append(20)
+my_list.append(30)
+
+my_list.insert(1,15)      #3
+
+my_list.remove(20)         #4
+
+pop = my_list.pop()         #5
+
+
+unordered = [8, 3, 1, 5, 4]  #6
+unordered.sort()
+print(unordered)          #7
+print(my_list)
+
+#part 6
+words = ["python", "data", "science", "machine", "learning"]
+word_lengths = [len(i) for i in words]
+
+prices = [100, 250, 45, 300, 80]
+discount = [i * 0.9 if i > 150  else i for i in prices]
+print("w_length" , word_lengths)
+print("discount" , discount)
+
+
+
+
+
+
+
+
