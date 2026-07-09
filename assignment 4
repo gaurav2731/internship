@@ -1,0 +1,64 @@
+# 1. multiply_numbers
+def multiply_numbers(a, b=10):
+    return a * b
+
+print("Multiply (5, 4):", multiply_numbers(5, 4))
+print("Multiply (7):", multiply_numbers(7))
+
+# 2. sum_all with *args
+def sum_all(*a):
+    return sum(a)
+
+print("Sum all (1,2,3):", sum_all(1, 2, 3))
+print("Sum all (10,20,30,40):", sum_all(10, 20, 30, 40))
+
+# 3. top_student with **kwargs
+def top_student(**kwargs):
+    return max(kwargs, key=kwargs.get)
+
+print("Top Student:", top_student(alice=85, bob=92, charlie=78))
+
+# 
+upper = lambda s: s.upper()
+print("Uppercase String:", upper("hello world"))
+
+# 
+# 1. Filter strings
+mixed_list = [1, "hello", 3.14, "world", 42]
+filtered_strings = list(filter(lambda x: isinstance(x, str), mixed_list))
+print("Filtered Strings:", filtered_strings)
+
+# 2. Map Celsius → Fahrenheit
+celsius_temps = [0, 20, 37, 100]
+fahrenheit_temps = list(map(lambda c: (c * 9/5) + 32, celsius_temps))
+print("Fahrenheit Temps:", fahrenheit_temps)
+
+# 3. Enumerate words with length > 4
+words = ["apple", "bat", "cat", "elephant"]
+enumerated_words = {i: word for i, word in enumerate(words, start=1) if len(word) > 4}
+print("Enumerated Words:", enumerated_words)
+
+# 
+numbers = list(range(1, 21))
+squared_evens = list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, numbers)))
+print("Squared Even Numbers:", squared_evens)
+
+
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
